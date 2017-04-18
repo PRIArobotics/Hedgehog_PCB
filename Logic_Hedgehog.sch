@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -52,7 +52,7 @@ Text HLabel 1350 1400 0    60   Input ~ 0
 3V3
 Text HLabel 10250 1050 2    60   Output ~ 0
 Enable_RPI_REGLER
-Text HLabel 10300 1300 2    60   Output ~ 0
+Text HLabel 10250 1300 2    60   Output ~ 0
 Enable_MS_REGLER
 $Sheet
 S 3550 3050 1950 1000
@@ -811,4 +811,16 @@ Text Label 7250 4700 0    60   ~ 0
 PA11
 Text Label 7250 4900 0    60   ~ 0
 PA12
+$Sheet
+S 6050 1000 1650 1150
+U 58F5FF27
+F0 "IMU" 60
+F1 "IMU.sch" 60
+F2 "3V3_IN" I L 6050 1150 60 
+F3 "SDO" B L 6050 1350 60 
+F4 "nCS" B L 6050 1500 60 
+F5 "SCL" B L 6050 1650 60 
+F6 "SDA" B L 6050 1800 60 
+F7 "INT" B L 6050 1950 60 
+$EndSheet
 $EndSCHEMATC
