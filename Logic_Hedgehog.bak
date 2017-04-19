@@ -52,7 +52,7 @@ Text HLabel 1350 1400 0    60   Input ~ 0
 3V3
 Text HLabel 10250 1050 2    60   Output ~ 0
 Enable_RPI_REGLER
-Text HLabel 10300 1300 2    60   Output ~ 0
+Text HLabel 10250 1300 2    60   Output ~ 0
 Enable_MS_REGLER
 $Sheet
 S 3550 3050 1950 1000
