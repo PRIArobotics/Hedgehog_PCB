@@ -49,14 +49,21 @@ Text HLabel 2250 2550 0    60   Input ~ 0
 VIN
 Text HLabel 6300 2600 2    60   Output ~ 0
 VOUT
-Wire Wire Line
-	2250 2550 3200 2550
-Wire Wire Line
-	6300 2600 5800 2600
-Text HLabel 2250 2050 0    60   Input ~ 0
+Text HLabel 2200 2975 0    60   Input ~ 0
 EN
-Wire Wire Line
-	2250 2050 3200 2050
 Text Notes 10550 6500 0    118  ~ 0
 Ref: 1x
+$Comp
+L GND #PWR?
+U 1 1 5907589C
+P 4175 3725
+F 0 "#PWR?" H 4175 3475 50  0001 C CNN
+F 1 "GND" H 4180 3552 50  0000 C CNN
+F 2 "" H 4175 3725 50  0001 C CNN
+F 3 "" H 4175 3725 50  0001 C CNN
+	1    4175 3725
+	1    0    0    -1  
+$EndComp
+Text Notes 3775 2900 0    60   ~ 0
+TPS53319?
 $EndSCHEMATC
