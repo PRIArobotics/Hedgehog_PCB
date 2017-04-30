@@ -504,4 +504,12 @@ Wire Wire Line
 Connection ~ 2375 3675
 Text Notes 10550 6500 0    118  ~ 0
 Ref: 0x
+Text Notes 5750 4275 0    60   ~ 0
+max. 3A
+Text Notes 5025 4375 0    60   ~ 0
+6-24V
+Text Notes 5025 5275 0    60   ~ 0
+6-19V
+Text Notes 5850 5275 0    60   ~ 0
+max. 1A
 $EndSCHEMATC
