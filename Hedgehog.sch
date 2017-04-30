@@ -502,4 +502,6 @@ Connection ~ 2375 4025
 Wire Wire Line
 	2375 3700 2375 3675
 Connection ~ 2375 3675
+Text Notes 10550 6500 0    118  ~ 0
+Ref: 0x
 $EndSCHEMATC

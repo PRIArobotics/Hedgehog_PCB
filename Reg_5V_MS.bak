@@ -57,4 +57,6 @@ Text HLabel 2250 2050 0    60   Input ~ 0
 EN
 Wire Wire Line
 	2250 2050 3200 2050
+Text Notes 10550 6500 0    118  ~ 0
+Ref: 1x
 $EndSCHEMATC

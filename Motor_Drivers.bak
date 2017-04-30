@@ -345,4 +345,6 @@ Wire Wire Line
 	4050 3550 4800 3550
 Wire Wire Line
 	4050 5100 4800 5100
+Text Notes 10575 6525 0    118  ~ 0
+Ref: 6x
 $EndSCHEMATC

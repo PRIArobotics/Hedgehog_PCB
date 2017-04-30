@@ -1256,4 +1256,6 @@ Wire Notes Line
 	7775 6100 7775 5050
 Text Notes 7800 5050 0    60   ~ 0
 ADC
+Text Notes 10575 6525 0    118  ~ 0
+Ref: 4x
 $EndSCHEMATC

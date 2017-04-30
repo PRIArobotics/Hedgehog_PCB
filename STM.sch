@@ -1237,4 +1237,6 @@ Connection ~ 2650 1200
 Wire Wire Line
 	2450 1300 2650 1300
 Connection ~ 2650 1300
+Text Notes 10025 6525 0    118  ~ 0
+Ref: 7x & 8x
 $EndSCHEMATC

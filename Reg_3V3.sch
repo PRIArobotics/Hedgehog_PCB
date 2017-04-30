@@ -53,4 +53,6 @@ Wire Wire Line
 	1450 3050 2900 3050
 Wire Wire Line
 	7100 3150 6050 3150
+Text Notes 10550 6500 0    118  ~ 0
+Ref: 3x
 $EndSCHEMATC
