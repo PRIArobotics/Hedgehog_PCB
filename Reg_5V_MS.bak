@@ -29,12 +29,13 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:hedgehog_symbols
+LIBS:switches
 LIBS:Hedgehog-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 2 8
 Title ""
 Date ""
 Rev ""
@@ -44,12 +45,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1450 3050 0    60   Input ~ 0
-VIN_3V3
-Text HLabel 7100 3150 2    60   Output ~ 0
-VOUT_3V3
+Text HLabel 2250 2550 0    60   Input ~ 0
+VIN
+Text HLabel 6300 2600 2    60   Output ~ 0
+VOUT
 Wire Wire Line
-	1450 3050 2900 3050
+	2250 2550 3200 2550
 Wire Wire Line
-	7100 3150 6050 3150
+	6300 2600 5800 2600
+Text HLabel 2250 2050 0    60   Input ~ 0
+EN
+Wire Wire Line
+	2250 2050 3200 2050
 $EndSCHEMATC

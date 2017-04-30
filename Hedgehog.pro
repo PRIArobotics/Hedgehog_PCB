@@ -1,4 +1,4 @@
-update=Montag, 17. April 2017 'u27' 10:27:22
+update=Son 30 Apr 2017 18:38:17 CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -69,3 +69,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=hedgehog_symbols
+LibName31=switches

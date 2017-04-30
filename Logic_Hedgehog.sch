@@ -29,8 +29,9 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:hedgehog_symbols
+LIBS:switches
 LIBS:Hedgehog-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -45,15 +46,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 6350 5600 2    60   Input ~ 0
-5V_RPI_Regler
-Text HLabel 1750 1200 0    60   Input ~ 0
-5V_Motor_Servo
-Text HLabel 1350 1400 0    60   Input ~ 0
+5V_RPi
+Text HLabel 1700 1500 0    60   Input ~ 0
+5V_MS
+Text HLabel 1700 1775 0    60   Input ~ 0
 3V3
 Text HLabel 9050 3550 2    60   Output ~ 0
-Enable_RPI_REGLER
+EN_Reg_RPi
 Text HLabel 9050 3650 2    60   Output ~ 0
-Enable_MS_REGLER
+EN_Reg_MS
 $Sheet
 S 3550 3050 1950 1000
 U 58F51945
@@ -85,16 +86,6 @@ F10 "PWM2" I L 6150 1450 60
 F11 "PWM3" I L 6150 1650 60 
 F12 "MODE" I R 7350 1650 60 
 $EndSheet
-Text Label 2050 1400 2    60   ~ 0
-3V3_IN
-Text Label 2850 3200 0    60   ~ 0
-3V3_IN
-Text Label 7800 1000 2    60   ~ 0
-3V3_IN
-Text Label 2450 1200 2    60   ~ 0
-5V_MS
-Text Label 7800 1100 2    60   ~ 0
-5V_MS
 $Comp
 L RaspberryPI3 U?
 U 1 1 58F62DC3
@@ -271,8 +262,6 @@ F 3 "" H 10100 4700 50  0001 C CNN
 	1    10100 4700
 	1    0    0    -1  
 $EndComp
-Text Label 9400 4750 0    60   ~ 0
-5V_MS
 $Comp
 L GND #PWR?
 U 1 1 58F6DFFF
@@ -284,8 +273,6 @@ F 3 "" H 10750 6000 50  0001 C CNN
 	1    10750 6000
 	1    0    0    -1  
 $EndComp
-Text Label 10050 6050 0    60   ~ 0
-3V3_IN
 Entry Wire Line
 	8600 1150 8700 1250
 Entry Wire Line
@@ -387,7 +374,7 @@ Entry Wire Line
 Text Label 7800 6050 0    60   ~ 0
 PB1
 Text HLabel 8250 6050 2    60   Input ~ 0
-VBATT_ADC
+POWER_IN_SENSE
 Entry Wire Line
 	5800 850  5900 950 
 Entry Wire Line
@@ -516,21 +503,11 @@ F6 "SDA" B L 1800 7100 60
 F7 "INT" B L 1800 7250 60 
 $EndSheet
 Text HLabel 9050 3750 2    60   Output ~ 0
-STM_ON_OFF
+EN_PWR_IN
 Text HLabel 9050 3850 2    60   Input ~ 0
-PUSH_BUTTON
+PWR_BUTTON_STATE
 Text Notes 2100 7250 0    60   ~ 0
 INT FOR I2C ?
-Wire Wire Line
-	1350 1400 2050 1400
-Wire Wire Line
-	3550 3200 2850 3200
-Wire Wire Line
-	7350 1000 7800 1000
-Wire Wire Line
-	1750 1200 2450 1200
-Wire Wire Line
-	7350 1100 7800 1100
 Wire Wire Line
 	6100 5550 6200 5550
 Wire Wire Line
@@ -568,8 +545,6 @@ Wire Wire Line
 Connection ~ 10100 4500
 Wire Wire Line
 	9400 4600 9500 4600
-Wire Wire Line
-	9400 4300 9400 4750
 Wire Wire Line
 	9400 4300 9500 4300
 Wire Wire Line
@@ -680,10 +655,6 @@ Connection ~ 10750 5200
 Connection ~ 10800 1950
 Connection ~ 10750 5900
 Connection ~ 10050 5900
-Wire Wire Line
-	10100 1250 10100 2250
-Wire Wire Line
-	10050 5200 10050 6050
 Wire Wire Line
 	8700 1250 9550 1250
 Wire Wire Line
@@ -836,15 +807,11 @@ Wire Wire Line
 Wire Wire Line
 	1050 6800 1800 6800
 Wire Wire Line
-	1800 6450 1050 6450
-Wire Wire Line
 	1800 6650 1050 6650
 Wire Wire Line
 	1800 6950 1050 6950
 Wire Wire Line
 	1800 7100 1050 7100
-Text Label 1050 6450 0    60   ~ 0
-3V3_IN
 Text Label 1050 6650 0    60   ~ 0
 PE5
 Text Label 1050 7100 0    60   ~ 0
@@ -870,8 +837,6 @@ F 3 "" H 10800 2100 50  0001 C CNN
 	1    10800 2100
 	1    0    0    -1  
 $EndComp
-Text Label 10100 2250 0    60   ~ 0
-3V3_IN
 Entry Wire Line
 	8050 3450 8150 3550
 Entry Wire Line
@@ -920,8 +885,8 @@ Text Notes 6700 5950 0    60   ~ 0
 UART1
 Text Notes 6600 4500 0    60   ~ 0
 UART1
-Text Notes 700  6800 0    60   ~ 0
-SPI-1
+Text Notes 775  6800 0    60   ~ 0
+SPI1
 Entry Wire Line
 	7700 6100 7800 6200
 Entry Wire Line
@@ -1085,8 +1050,6 @@ F 3 "" H 1850 3750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 3600 1850 3750
-Wire Wire Line
-	1850 2700 1850 2450
 $Comp
 L R R?
 U 1 1 58FC530A
@@ -1100,12 +1063,6 @@ F 3 "" H 1250 3400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1100 3400 800  3400
-Wire Wire Line
-	1850 2450 1600 2450
-Text Label 1600 2450 0    60   ~ 0
-VLIPO
-Text HLabel 1600 2450 0    60   Input ~ 0
-VIN_LIPO
 Text Label 800  3400 0    60   ~ 0
 PA0
 Text Notes 9850 1000 0    60   ~ 0
@@ -1168,4 +1125,148 @@ Wire Notes Line
 	700  4000 700  2200
 Wire Notes Line
 	700  2200 2700 2200
+$Comp
+L +3V3 #PWR?
+U 1 1 59094422
+P 1775 1725
+F 0 "#PWR?" H 1775 1575 50  0001 C CNN
+F 1 "+3V3" H 1775 1875 50  0000 C CNN
+F 2 "" H 1775 1725 50  0001 C CNN
+F 3 "" H 1775 1725 50  0001 C CNN
+	1    1775 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1775 1725 1775 1775
+Wire Wire Line
+	1775 1775 1700 1775
+$Comp
+L +3V3 #PWR?
+U 1 1 59094E31
+P 1850 2600
+F 0 "#PWR?" H 1850 2450 50  0001 C CNN
+F 1 "+3V3" H 1850 2750 50  0000 C CNN
+F 2 "" H 1850 2600 50  0001 C CNN
+F 3 "" H 1850 2600 50  0001 C CNN
+	1    1850 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2600 1850 2700
+$Comp
+L +3V3 #PWR?
+U 1 1 590959B1
+P 3375 3125
+F 0 "#PWR?" H 3375 2975 50  0001 C CNN
+F 1 "+3V3" H 3375 3275 50  0000 C CNN
+F 2 "" H 3375 3125 50  0001 C CNN
+F 3 "" H 3375 3125 50  0001 C CNN
+	1    3375 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3375 3125 3375 3200
+Wire Wire Line
+	3375 3200 3550 3200
+$Comp
+L +3V3 #PWR?
+U 1 1 59095ED7
+P 1575 6375
+F 0 "#PWR?" H 1575 6225 50  0001 C CNN
+F 1 "+3V3" H 1575 6525 50  0000 C CNN
+F 2 "" H 1575 6375 50  0001 C CNN
+F 3 "" H 1575 6375 50  0001 C CNN
+	1    1575 6375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1575 6375 1575 6450
+Wire Wire Line
+	1575 6450 1800 6450
+$Comp
+L +3V3 #PWR?
+U 1 1 59096BAF
+P 10050 5150
+F 0 "#PWR?" H 10050 5000 50  0001 C CNN
+F 1 "+3V3" H 10175 5250 50  0000 C CNN
+F 2 "" H 10050 5150 50  0001 C CNN
+F 3 "" H 10050 5150 50  0001 C CNN
+	1    10050 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 5150 10050 5900
+$Comp
+L +3V3 #PWR?
+U 1 1 5909B6DB
+P 10100 1200
+F 0 "#PWR?" H 10100 1050 50  0001 C CNN
+F 1 "+3V3" H 10100 1350 50  0000 C CNN
+F 2 "" H 10100 1200 50  0001 C CNN
+F 3 "" H 10100 1200 50  0001 C CNN
+	1    10100 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 10100 1250
+Wire Wire Line
+	10100 1200 10100 1950
+$Comp
+L +3V3 #PWR?
+U 1 1 5909E6BA
+P 7450 925
+F 0 "#PWR?" H 7450 775 50  0001 C CNN
+F 1 "+3V3" H 7450 1075 50  0000 C CNN
+F 2 "" H 7450 925 50  0001 C CNN
+F 3 "" H 7450 925 50  0001 C CNN
+	1    7450 925 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 925  7450 1000
+Wire Wire Line
+	7450 1000 7350 1000
+$Comp
+L +5V #PWR?
+U 1 1 590A3BB0
+P 1775 1450
+F 0 "#PWR?" H 1775 1300 50  0001 C CNN
+F 1 "+5V" H 1775 1600 50  0000 C CNN
+F 2 "" H 1775 1450 50  0001 C CNN
+F 3 "" H 1775 1450 50  0001 C CNN
+	1    1775 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1500 1775 1500
+Wire Wire Line
+	1775 1500 1775 1450
+$Comp
+L +5V #PWR?
+U 1 1 590A40B0
+P 7650 925
+F 0 "#PWR?" H 7650 775 50  0001 C CNN
+F 1 "+5V" H 7650 1075 50  0000 C CNN
+F 2 "" H 7650 925 50  0001 C CNN
+F 3 "" H 7650 925 50  0001 C CNN
+	1    7650 925 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 925  7650 1100
+Wire Wire Line
+	7650 1100 7350 1100
+$Comp
+L +5V #PWR?
+U 1 1 590A66E3
+P 9400 4250
+F 0 "#PWR?" H 9400 4100 50  0001 C CNN
+F 1 "+5V" H 9400 4400 50  0000 C CNN
+F 2 "" H 9400 4250 50  0001 C CNN
+F 3 "" H 9400 4250 50  0001 C CNN
+	1    9400 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 4250 9400 4600
+Connection ~ 9400 4300
 $EndSCHEMATC
