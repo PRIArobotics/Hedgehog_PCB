@@ -181,42 +181,36 @@ Text HLabel 1100 3550 0    60   Input ~ 0
 3V3_IN
 Text Label 1550 3550 2    60   ~ 0
 3V3_IN
-Text Label 4200 3750 0    60   ~ 0
+Text Label 4075 3750 0    60   ~ 0
 3V3_IN
-Text Label 4250 5300 0    60   ~ 0
+Text Label 4075 5300 0    60   ~ 0
 3V3_IN
 Text HLabel 1100 3800 0    60   Input ~ 0
 VIN_MS
 Text Label 1550 3800 2    60   ~ 0
 VIN_MS
-Text Label 3750 5200 0    60   ~ 0
+Text Label 3350 5200 0    60   ~ 0
 VIN_MS
-Text Label 3700 3650 0    60   ~ 0
+Text Label 3350 3650 0    60   ~ 0
 VIN_MS
 Text HLabel 4050 3150 0    60   Input ~ 0
-DIR0
+M0_1
 Text HLabel 4050 3350 0    60   Input ~ 0
-DIR1
+M1_1
 Text HLabel 4050 4700 0    60   Input ~ 0
-DIR2
+M2_1
 Text HLabel 4050 4900 0    60   Input ~ 0
-DIR3
+M3_1
 Text HLabel 4050 3250 0    60   Input ~ 0
-PWM0
+M0_2
 Text HLabel 4050 3450 0    60   Input ~ 0
-PWM1
+M1_2
 Text HLabel 4050 4800 0    60   Input ~ 0
-PWM2
+M2_2
 Text HLabel 4050 5000 0    60   Input ~ 0
-PWM3
-Text HLabel 1050 4000 0    60   Input ~ 0
-MODE
-Text Label 1550 4000 2    60   ~ 0
-MODE
-Text Label 4050 3550 0    60   ~ 0
-MODE
-Text Label 4050 5100 0    60   ~ 0
-MODE
+M3_2
+Text HLabel 4050 3550 0    60   Input ~ 0
+MODE01
 $Comp
 L CONN_01X04 J?
 U 1 1 58F5C7EE
@@ -226,7 +220,7 @@ F 1 "MOTOR" V 7100 4350 50  0000 C CNN
 F 2 "" H 7000 4350 50  0001 C CNN
 F 3 "" H 7000 4350 50  0001 C CNN
 	1    7000 4350
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L CONN_01X04 J?
@@ -248,13 +242,13 @@ Wire Wire Line
 Wire Wire Line
 	4750 3850 4750 3950
 Wire Wire Line
-	4250 5300 4800 5300
+	4075 5300 4800 5300
 Wire Wire Line
 	4400 5300 4400 5400
 Wire Wire Line
 	4400 5700 4400 5800
 Wire Wire Line
-	3750 5200 4800 5200
+	3350 5200 4800 5200
 Wire Wire Line
 	3900 5200 3900 5350
 Wire Wire Line
@@ -262,7 +256,7 @@ Wire Wire Line
 Connection ~ 4400 5300
 Connection ~ 3900 5200
 Wire Wire Line
-	4200 3750 4800 3750
+	4075 3750 4800 3750
 Wire Wire Line
 	4400 3750 4400 3850
 Wire Wire Line
@@ -272,7 +266,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 3850 3900 3650
 Wire Wire Line
-	3700 3650 4800 3650
+	3350 3650 4800 3650
 Connection ~ 4400 3750
 Connection ~ 3900 3650
 Wire Wire Line
@@ -288,8 +282,6 @@ Wire Wire Line
 Wire Wire Line
 	4800 3450 4050 3450
 Wire Wire Line
-	4800 3550 4050 3550
-Wire Wire Line
 	4800 4700 4050 4700
 Wire Wire Line
 	4800 4800 4050 4800
@@ -297,10 +289,6 @@ Wire Wire Line
 	4800 4900 4050 4900
 Wire Wire Line
 	4800 5000 4050 5000
-Wire Wire Line
-	4800 5100 4050 5100
-Wire Wire Line
-	1050 4000 1550 4000
 Wire Wire Line
 	5900 3200 7150 3200
 Wire Wire Line
@@ -351,4 +339,10 @@ Wire Wire Line
 	5900 5350 6850 5350
 Wire Wire Line
 	6850 5350 6850 4550
+Text HLabel 4050 5100 0    60   Input ~ 0
+MODE23
+Wire Wire Line
+	4050 3550 4800 3550
+Wire Wire Line
+	4050 5100 4800 5100
 $EndSCHEMATC

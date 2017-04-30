@@ -72,19 +72,20 @@ $EndSheet
 $Sheet
 S 6150 900  1200 850 
 U 58F5B6C4
-F0 "Motortreiber" 60
-F1 "Motortreiber.sch" 60
+F0 "Motor_Drivers" 60
+F1 "Motor_Drivers.sch" 60
 F2 "3V3_IN" I R 7350 1000 60 
 F3 "VIN_MS" I R 7350 1100 60 
-F4 "DIR0" I L 6150 950 60 
-F5 "DIR1" I L 6150 1150 60 
-F6 "DIR2" I L 6150 1350 60 
-F7 "DIR3" I L 6150 1550 60 
-F8 "PWM0" I L 6150 1050 60 
-F9 "PWM1" I L 6150 1250 60 
-F10 "PWM2" I L 6150 1450 60 
-F11 "PWM3" I L 6150 1650 60 
-F12 "MODE" I R 7350 1650 60 
+F4 "M0_1" I L 6150 950 60 
+F5 "M1_1" I L 6150 1150 60 
+F6 "M2_1" I L 6150 1350 60 
+F7 "M3_1" I L 6150 1550 60 
+F8 "M0_2" I L 6150 1050 60 
+F9 "M1_2" I L 6150 1250 60 
+F10 "M2_2" I L 6150 1450 60 
+F11 "M3_2" I L 6150 1650 60 
+F12 "MODE01" I R 7350 1650 60 
+F13 "MODE23" I R 7350 1550 60 
 $EndSheet
 $Comp
 L RaspberryPI3 U?
@@ -391,8 +392,6 @@ Entry Wire Line
 	5800 1450 5900 1550
 Entry Wire Line
 	5800 1550 5900 1650
-Entry Wire Line
-	5800 1700 5900 1800
 Text Label 5950 1900 0    60   ~ 0
 PC0
 Text Label 5950 950  0    60   ~ 0
@@ -770,8 +769,6 @@ Wire Wire Line
 Wire Wire Line
 	5900 1650 6150 1650
 Wire Wire Line
-	5900 1800 5900 1900
-Wire Wire Line
 	5900 1900 7450 1900
 Wire Wire Line
 	7450 1900 7450 1650
@@ -911,8 +908,8 @@ Text Label 8250 6400 2    60   ~ 0
 PB14
 Text Label 8250 6500 2    60   ~ 0
 PB15
-Text Notes 8350 6350 0    60   ~ 0
-SPI-2
+Text Notes 8300 6350 0    60   ~ 0
+SPI2
 Text Notes 7100 4400 0    60   ~ 0
 TX
 Text Notes 7150 4550 0    60   ~ 0
@@ -969,8 +966,8 @@ Text Notes 9050 2950 0    60   ~ 0
 SCK
 Text Notes 9050 3050 0    60   ~ 0
 MOSI
-Text Notes 9750 2900 0    60   ~ 0
-SPI-1
+Text Notes 9600 2900 0    60   ~ 0
+SPI1
 Wire Wire Line
 	5500 3900 6150 3900
 Wire Wire Line
@@ -1009,61 +1006,20 @@ Wire Wire Line
 	7450 3900 6900 3900
 Text Label 6900 3900 0    60   ~ 0
 PA0
-Text Notes 6200 3900 0    60   ~ 0
-PIEZO_SUMMER
+Text Notes 6275 3900 0    60   ~ 0
+Piezo-Buzzer
 $Comp
 L Piezo-Buzzer U?
 U 1 1 58FC2F9F
-P 1900 2850
-F 0 "U?" H 2100 2950 60  0000 C CNN
-F 1 "Piezo-Buzzer" H 2350 2850 60  0000 C CNN
-F 2 "" H 1900 2850 60  0001 C CNN
-F 3 "" H 1900 2850 60  0001 C CNN
-	1    1900 2850
+P 1750 3075
+F 0 "U?" H 1950 3175 60  0000 C CNN
+F 1 "Piezo-Buzzer" H 2200 3075 60  0000 C CNN
+F 2 "" H 1750 3075 60  0001 C CNN
+F 3 "" H 1750 3075 60  0001 C CNN
+	1    1750 3075
 	1    0    0    -1  
 $EndComp
-$Comp
-L Q_NPN_BCE Q?
-U 1 1 58FC3920
-P 1750 3400
-F 0 "Q?" H 1950 3450 50  0000 L CNN
-F 1 "Q_NPN_BCE" H 1950 3350 50  0000 L CNN
-F 2 "" H 1950 3500 50  0001 C CNN
-F 3 "" H 1750 3400 50  0001 C CNN
-	1    1750 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 3000 1850 3200
-Wire Wire Line
-	1550 3400 1400 3400
-$Comp
-L GND #PWR?
-U 1 1 58FC43D7
-P 1850 3750
-F 0 "#PWR?" H 1850 3500 50  0001 C CNN
-F 1 "GND" H 1850 3600 50  0000 C CNN
-F 2 "" H 1850 3750 50  0001 C CNN
-F 3 "" H 1850 3750 50  0001 C CNN
-	1    1850 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 3600 1850 3750
-$Comp
-L R R?
-U 1 1 58FC530A
-P 1250 3400
-F 0 "R?" V 1330 3400 50  0000 C CNN
-F 1 "R" V 1250 3400 50  0000 C CNN
-F 2 "" V 1180 3400 50  0001 C CNN
-F 3 "" H 1250 3400 50  0001 C CNN
-	1    1250 3400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1100 3400 800  3400
-Text Label 800  3400 0    60   ~ 0
+Text Label 1400 2850 0    60   ~ 0
 PA0
 Text Notes 9850 1000 0    60   ~ 0
 Digital Input
@@ -1140,19 +1096,6 @@ Wire Wire Line
 	1775 1725 1775 1775
 Wire Wire Line
 	1775 1775 1700 1775
-$Comp
-L +3V3 #PWR?
-U 1 1 59094E31
-P 1850 2600
-F 0 "#PWR?" H 1850 2450 50  0001 C CNN
-F 1 "+3V3" H 1850 2750 50  0000 C CNN
-F 2 "" H 1850 2600 50  0001 C CNN
-F 3 "" H 1850 2600 50  0001 C CNN
-	1    1850 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 2600 1850 2700
 $Comp
 L +3V3 #PWR?
 U 1 1 590959B1
@@ -1269,4 +1212,28 @@ $EndComp
 Wire Wire Line
 	9400 4250 9400 4600
 Connection ~ 9400 4300
+Wire Wire Line
+	1700 2925 1700 2850
+Wire Wire Line
+	1700 2850 1400 2850
+Wire Wire Line
+	1700 3225 1700 3300
+Wire Wire Line
+	1700 3300 1400 3300
+Text Notes 7850 5000 0    60   ~ 0
+Problem: 2 net names
+Text Notes 1300 3525 0    60   ~ 0
+TODO: Timer1
+Entry Wire Line
+	5800 1900 5900 2000
+Wire Wire Line
+	5900 2000 7550 2000
+Wire Wire Line
+	7550 2000 7550 1550
+Wire Wire Line
+	7550 1550 7350 1550
+Text Label 5950 2000 0    60   ~ 0
+PC5
+Entry Wire Line
+	5800 1800 5900 1900
 $EndSCHEMATC
