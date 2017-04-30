@@ -210,4 +210,6 @@ Text HLabel 7400 3350 2    60   BiDi ~ 0
 SDA
 Text HLabel 7400 3450 2    60   BiDi ~ 0
 INT
+Text Notes 3625 2925 0    60   ~ 0
+Add L?
 $EndSCHEMATC
