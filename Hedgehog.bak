@@ -512,4 +512,8 @@ Text Notes 5025 5275 0    60   ~ 0
 6-19V
 Text Notes 5850 5275 0    60   ~ 0
 max. 1A
+Text Notes 5025 3175 0    60   ~ 0
+6-19V
+Text Notes 5700 3175 0    60   ~ 0
+max. 10A
 $EndSCHEMATC
