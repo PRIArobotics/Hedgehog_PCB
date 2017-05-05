@@ -31,7 +31,7 @@ LIBS:valves
 LIBS:hedgehog_symbols
 LIBS:switches
 LIBS:Hedgehog-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
