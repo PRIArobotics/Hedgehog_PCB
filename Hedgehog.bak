@@ -51,7 +51,7 @@ U 1 1 58F4EA55
 P 900 4075
 F 0 "J1" H 900 4225 50  0000 C CNN
 F 1 "POWER_IN" V 1000 4075 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch3.96mm_Friction_Lock" H 900 4075 50  0001 C CNN
+F 2 "hedgehog_footprints:POWER_IN" H 900 4075 50  0001 C CNN
 F 3 "" H 900 4075 50  0001 C CNN
 	1    900  4075
 	-1   0    0    1   
