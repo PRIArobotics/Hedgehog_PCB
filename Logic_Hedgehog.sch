@@ -61,7 +61,7 @@ U 1 1 58F62DC3
 P 2750 9400
 F 0 "J40" H 2750 10450 60  0000 C CNN
 F 1 "RaspberryPi3" H 2750 8225 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x20_Pitch2.54mm" H 2750 8375 60  0001 C CNN
+F 2 "hedgehog_footprints:Socket_Strip_Straight_2x20_Pitch2.54mm_thermals" H 2750 8375 60  0001 C CNN
 F 3 "" H 2750 8375 60  0001 C CNN
 	1    2750 9400
 	1    0    0    -1  
@@ -182,7 +182,7 @@ U 1 1 58F668A3
 P 14750 1900
 F 0 "J50" H 14750 2350 50  0000 C CNN
 F 1 "Digital" V 14750 1900 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x08_Pitch2.54mm" H 14750 700 50  0001 C CNN
+F 2 "hedgehog_footprints:Socket_Strip_Straight_2x08_Pitch2.54mm_thermals" H 14750 700 50  0001 C CNN
 F 3 "" H 14750 700 50  0001 C CNN
 	1    14750 1900
 	1    0    0    -1  
@@ -193,7 +193,7 @@ U 1 1 58F66984
 P 14750 3675
 F 0 "J51" H 14750 4125 50  0000 C CNN
 F 1 "Analog" V 14750 3675 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x08_Pitch2.54mm" H 14750 2475 50  0001 C CNN
+F 2 "hedgehog_footprints:Socket_Strip_Straight_2x08_Pitch2.54mm_thermals" H 14750 2475 50  0001 C CNN
 F 3 "" H 14750 2475 50  0001 C CNN
 	1    14750 3675
 	1    0    0    -1  

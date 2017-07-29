@@ -61,7 +61,7 @@ U 1 1 58F62DC3
 P 2750 9400
 F 0 "J40" H 2750 10450 60  0000 C CNN
 F 1 "RaspberryPi3" H 2750 8225 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x20_Pitch2.54mm" H 2750 8375 60  0001 C CNN
+F 2 "hedgehog_footprints:Socket_Strip_Straight_2x20_Pitch2.54mm_thermals" H 2750 8375 60  0001 C CNN
 F 3 "" H 2750 8375 60  0001 C CNN
 	1    2750 9400
 	1    0    0    -1  
@@ -552,6 +552,8 @@ $Comp
 L STM32F401VBT6 U40
 U 1 1 590FD684
 P 5325 4225
+AR Path="/590FD684" Ref="U40"  Part="1" 
+AR Path="/58F4F058/590FD684" Ref="U40"  Part="1" 
 F 0 "U40" H 6400 6100 60  0000 C CNN
 F 1 "STM32F401VBT6" H 6700 6000 60  0000 C CNN
 F 2 "hedgehog_footprints:LQFP_100" H 5075 4025 60  0001 C CNN
