@@ -1,12 +1,8 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 3
 LIBS:power
 LIBS:device
-LIBS:transistors
-LIBS:conn
 LIBS:linear
 LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
@@ -21,15 +17,12 @@ LIBS:audio
 LIBS:interface
 LIBS:digital-audio
 LIBS:philips
-LIBS:display
 LIBS:cypress
 LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:valves
 LIBS:hedgehog_symbols
-LIBS:switches
 LIBS:Hedgehog-cache
 EELAYER 26 0
 EELAYER END
@@ -75,6 +68,7 @@ F1 "Reg_5V_MS.sch" 60
 F2 "VIN" I L 5000 3050 60 
 F3 "VOUT" O R 6150 3050 60 
 F4 "EN" I L 5000 2700 60 
+F5 "PG" O L 5000 2875 60 
 $EndSheet
 $Sheet
 S 5000 3800 1150 750 
@@ -82,7 +76,7 @@ U 58F4ECA5
 F0 "Reg_5V_RPi" 60
 F1 "Reg_5V_RPi.sch" 60
 F2 "VIN" I L 5000 4250 60 
-F3 "EN" I L 5000 3950 60 
+F3 "EN" O L 5000 3950 60 
 F4 "VOUT" I R 6150 4150 60 
 $EndSheet
 $Comp
@@ -91,7 +85,7 @@ U 1 1 58F4ED5F
 P 1400 3500
 F 0 "J2" V 1400 3675 50  0000 C CNN
 F 1 "POWER_OUT" V 1500 3500 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 1400 3500 50  0001 C CNN
+F 2 "hedgehog_footprints:Socket_Strip_Straight_1x02_Pitch2.54mm" H 1400 3500 50  0001 C CNN
 F 3 "" H 1400 3500 50  0001 C CNN
 	1    1400 3500
 	0    -1   -1   0   
@@ -120,6 +114,7 @@ F6 "POWER_IN_SENSE" I L 7750 4550 60
 F7 "EN_Reg_RPi" O R 10100 3500 60 
 F8 "EN_PWR_IN" O R 10100 3625 60 
 F9 "PWR_BUTTON_STATE" I L 7750 4425 60 
+F10 "PG_Reg_MS" I R 10100 3750 60 
 $EndSheet
 $Sheet
 S 5000 4850 1250 700 
@@ -495,7 +490,7 @@ Text Notes 5025 5275 0    60   ~ 0
 Text Notes 5850 5275 0    60   ~ 0
 max. 1A
 Text Notes 5025 3175 0    60   ~ 0
-6-19V
+6-24V
 Text Notes 5700 3175 0    60   ~ 0
 max. 10A
 Wire Wire Line
@@ -533,4 +528,12 @@ F 3 "" H 3175 3575 50  0001 C CNN
 	1    3175 3575
 	0    -1   1    0   
 $EndComp
+Wire Wire Line
+	5000 2875 4475 2875
+Text Label 4475 2875 0    60   ~ 0
+PG_Reg_MS
+Text Label 10875 3750 2    60   ~ 0
+PG_Reg_MS
+Wire Wire Line
+	10875 3750 10100 3750
 $EndSCHEMATC

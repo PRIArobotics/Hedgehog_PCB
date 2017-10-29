@@ -1,4 +1,4 @@
-(module MountingHole_2.75mm_M2.5 (layer F.Cu) (tedit 591857C8)
+(module MountingHole_2.75mm_M2.5 (layer F.Cu) (tedit 59DA987D)
   (descr "Mounting Hole 2.75mm, no annular, M2.5")
   (tags "mounting hole 2.75mm no annular m2.5")
   (fp_text reference MH1 (at 0 -3.7) (layer F.SilkS) hide
@@ -13,5 +13,5 @@
   (pad "" smd circle (at 0 0) (size 2.4 2.4) (layers F.Cu F.Mask)
     (solder_mask_margin 2) (clearance 2.1))
   (pad "" np_thru_hole circle (at 0 0) (size 2.75 2.75) (drill 2.75) (layers *.Cu *.Mask)
-    (clearance 0.1))
+    (clearance 1))
 )

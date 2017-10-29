@@ -1,12 +1,8 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 3
 LIBS:power
 LIBS:device
-LIBS:transistors
-LIBS:conn
 LIBS:linear
 LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
@@ -21,15 +17,12 @@ LIBS:audio
 LIBS:interface
 LIBS:digital-audio
 LIBS:philips
-LIBS:display
 LIBS:cypress
 LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:valves
 LIBS:hedgehog_symbols
-LIBS:switches
 LIBS:Hedgehog-cache
 EELAYER 26 0
 EELAYER END
@@ -45,9 +38,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3725 3325 0    60   Input ~ 0
+Text HLabel 4100 3325 0    60   Input ~ 0
 VIN
-Text HLabel 4200 3525 0    60   Input ~ 0
+Text HLabel 5025 3525 0    60   Input ~ 0
 EN
 Text HLabel 7400 3325 2    60   Input ~ 0
 VOUT
@@ -65,12 +58,12 @@ $EndComp
 $Comp
 L C_Small C20
 U 1 1 590647C4
-P 3800 3850
-F 0 "C20" H 3575 3875 50  0000 L CNN
-F 1 "4µ7" H 3575 3800 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3800 3850 50  0001 C CNN
-F 3 "" H 3800 3850 50  0001 C CNN
-	1    3800 3850
+P 4250 3800
+F 0 "C20" H 4025 3825 50  0000 L CNN
+F 1 "4µ7" H 4025 3750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4250 3800 50  0001 C CNN
+F 3 "" H 4250 3800 50  0001 C CNN
+	1    4250 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -183,17 +176,6 @@ F 3 "" V 6575 3450 50  0001 C CNN
 	1    6575 3450
 	0    1    1    0   
 $EndComp
-$Comp
-L R_Small R20
-U 1 1 590652CD
-P 4275 3850
-F 0 "R20" H 4075 3900 50  0000 L CNN
-F 1 "<60k" H 4025 3825 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 4275 3850 50  0001 C CNN
-F 3 "" H 4275 3850 50  0001 C CNN
-	1    4275 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5175 3925 5100 3925
 Wire Wire Line
@@ -208,15 +190,12 @@ Wire Wire Line
 	4800 3825 4800 3725
 Connection ~ 4800 3725
 Wire Wire Line
-	4200 3525 5175 3525
+	5025 3525 5175 3525
 Wire Wire Line
-	4275 3750 4275 3525
-Connection ~ 4275 3525
+	4100 3325 5175 3325
 Wire Wire Line
-	3725 3325 5175 3325
-Wire Wire Line
-	3800 3325 3800 3750
-Connection ~ 3800 3325
+	4250 3325 4250 3700
+Connection ~ 4250 3325
 Wire Wire Line
 	6175 3325 6225 3325
 Wire Wire Line
@@ -271,12 +250,9 @@ Wire Wire Line
 	6400 3825 6975 3825
 Connection ~ 6975 3825
 Wire Wire Line
-	3800 4250 7325 4250
+	4250 4250 7325 4250
 Wire Wire Line
-	3800 4250 3800 3950
-Wire Wire Line
-	4275 3950 4275 4250
-Connection ~ 4275 4250
+	4250 4250 4250 3900
 Wire Wire Line
 	4625 4175 4625 4250
 Connection ~ 4625 4250

@@ -1,12 +1,8 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 3
 LIBS:power
 LIBS:device
-LIBS:transistors
-LIBS:conn
 LIBS:linear
 LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
@@ -21,15 +17,12 @@ LIBS:audio
 LIBS:interface
 LIBS:digital-audio
 LIBS:philips
-LIBS:display
 LIBS:cypress
 LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:valves
 LIBS:hedgehog_symbols
-LIBS:switches
 LIBS:Hedgehog-cache
 EELAYER 26 0
 EELAYER END
@@ -67,7 +60,7 @@ L C_Small C30
 U 1 1 5907006E
 P 4525 3775
 F 0 "C30" H 4300 3800 50  0000 L CNN
-F 1 "2µ2" H 4300 3725 50  0000 L CNN
+F 1 "10µ" H 4300 3725 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 4525 3775 50  0001 C CNN
 F 3 "" H 4525 3775 50  0001 C CNN
 	1    4525 3775
@@ -82,17 +75,6 @@ F 1 "100n" H 4900 4050 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 5150 4100 50  0001 C CNN
 F 3 "" H 5150 4100 50  0001 C CNN
 	1    5150 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C31
-U 1 1 5907018C
-P 4825 3450
-F 0 "C31" H 4600 3475 50  0000 L CNN
-F 1 "1µ" H 4625 3400 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4825 3450 50  0001 C CNN
-F 3 "" H 4825 3450 50  0001 C CNN
-	1    4825 3450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -195,17 +177,6 @@ F 3 "" H 5675 4500 50  0001 C CNN
 	1    5675 4500
 	1    0    0    -1  
 $EndComp
-$Comp
-L GND #PWR068
-U 1 1 59072555
-P 4825 3575
-F 0 "#PWR068" H 4825 3325 50  0001 C CNN
-F 1 "GND" H 4825 3425 50  0000 C CNN
-F 2 "" H 4825 3575 50  0001 C CNN
-F 3 "" H 4825 3575 50  0001 C CNN
-	1    4825 3575
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4425 3325 5225 3325
 Wire Wire Line
@@ -214,14 +185,9 @@ Wire Wire Line
 	5225 3575 5150 3575
 Wire Wire Line
 	5150 3575 5150 3550
-Wire Wire Line
-	4825 3325 4825 3350
 Connection ~ 5150 3325
 Wire Wire Line
-	4825 3550 4825 3575
-Wire Wire Line
 	4525 3325 4525 3675
-Connection ~ 4825 3325
 Connection ~ 4525 3325
 Wire Wire Line
 	5225 3975 5150 3975
