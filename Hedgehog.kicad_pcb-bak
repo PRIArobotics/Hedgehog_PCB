@@ -4532,7 +4532,7 @@
     (tags "capacitor 0603")
     (path /58F4F058/5914BBA5)
     (attr smd)
-    (fp_text reference C52 (at 0 -1.4 180) (layer F.SilkS)
+    (fp_text reference C52 (at 0 -1.35 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 10µ (at 0 1.5 180) (layer F.Fab)
