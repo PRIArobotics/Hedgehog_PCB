@@ -23,7 +23,81 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:hedgehog_symbols
-LIBS:Hedgehog-cache
+LIBS:ac-dc
+LIBS:Altera
+LIBS:analog_devices
+LIBS:Battery_Management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:Connector
+LIBS:dc-dc
+LIBS:Diode
+LIBS:Display
+LIBS:driver_gate
+LIBS:DSP_Microchip_DSPIC33
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:Espressif
+LIBS:FPGA_Actel
+LIBS:ftdi
+LIBS:gennum
+LIBS:Graphic
+LIBS:hc11
+LIBS:infineon
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:LED
+LIBS:LEM
+LIBS:Logic_74xgxx
+LIBS:Logic_74xx
+LIBS:Logic_CMOS_4000
+LIBS:Logic_CMOS_IEEE
+LIBS:logic_programmable
+LIBS:Logic_TTL_IEEE
+LIBS:maxim
+LIBS:MCU_Microchip_PIC10
+LIBS:MCU_Microchip_PIC12
+LIBS:MCU_Microchip_PIC16
+LIBS:MCU_Microchip_PIC18
+LIBS:MCU_Microchip_PIC24
+LIBS:MCU_Microchip_PIC32
+LIBS:MCU_NXP_Kinetis
+LIBS:MCU_NXP_LPC
+LIBS:MCU_NXP_S08
+LIBS:MCU_ST_STM8
+LIBS:MCU_Texas_MSP430
+LIBS:Mechanical
+LIBS:modules
+LIBS:Motor
+LIBS:motor_drivers
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:Relay
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:Sensor_Current
+LIBS:sensors
+LIBS:silabs
+LIBS:supertex
+LIBS:Switch
+LIBS:Transformer
+LIBS:Transistor
+LIBS:triac_thyristor
+LIBS:Valve
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -39,14 +113,14 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X02 J1
+L Conn_01x02 J1
 U 1 1 58F4EA55
-P 900 4075
-F 0 "J1" H 900 4225 50  0000 C CNN
+P 900 4125
+F 0 "J1" H 900 4250 50  0000 C CNN
 F 1 "POWER_IN" V 1000 4075 50  0000 C CNN
-F 2 "hedgehog_footprints:POWER_IN" H 900 4075 50  0001 C CNN
-F 3 "" H 900 4075 50  0001 C CNN
-	1    900  4075
+F 2 "hedgehog_footprints:POWER_IN" H 900 4125 50  0001 C CNN
+F 3 "" H 900 4125 50  0001 C CNN
+	1    900  4125
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -80,14 +154,14 @@ F3 "EN" I L 5000 3950 60
 F4 "VOUT" I R 6150 4150 60 
 $EndSheet
 $Comp
-L CONN_01X02 J2
+L Conn_01x02 J2
 U 1 1 58F4ED5F
-P 1400 3500
-F 0 "J2" V 1400 3675 50  0000 C CNN
-F 1 "POWER_OUT" V 1500 3500 50  0000 C CNN
-F 2 "hedgehog_footprints:Socket_Strip_Straight_1x02_Pitch2.54mm" H 1400 3500 50  0001 C CNN
-F 3 "" H 1400 3500 50  0001 C CNN
-	1    1400 3500
+P 1350 3500
+F 0 "J2" V 1350 3625 50  0000 C CNN
+F 1 "POWER_OUT" V 1450 3450 50  0000 C CNN
+F 2 "hedgehog_footprints:Socket_Strip_Straight_1x02_Pitch2.54mm" H 1350 3500 50  0001 C CNN
+F 3 "" H 1350 3500 50  0001 C CNN
+	1    1350 3500
 	0    -1   -1   0   
 $EndComp
 $Comp
