@@ -1,4 +1,4 @@
-(module Socket_Strip_Straight_2x20_Pitch2.54mm_thermals locked (layer F.Cu) (tedit 59F211F6)
+(module Socket_Strip_Straight_2x20_Pitch2.54mm_thermals locked (layer F.Cu) (tedit 5A6E28A9)
   (descr "Through hole straight socket strip, 2x20, 2.54mm pitch, double rows")
   (tags "Through hole socket strip THT 2x20 2.54mm double row")
   (fp_text reference J40 (at 2.23 0.13 90) (layer F.SilkS) hide
