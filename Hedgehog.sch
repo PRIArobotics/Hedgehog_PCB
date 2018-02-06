@@ -1,104 +1,4 @@
-EESchema Schematic File Version 3
-LIBS:power
-LIBS:device
-LIBS:linear
-LIBS:regul
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:hedgehog_symbols
-LIBS:ac-dc
-LIBS:Altera
-LIBS:analog_devices
-LIBS:Battery_Management
-LIBS:bbd
-LIBS:bosch
-LIBS:brooktre
-LIBS:Connector
-LIBS:dc-dc
-LIBS:Diode
-LIBS:Display
-LIBS:driver_gate
-LIBS:DSP_Microchip_DSPIC33
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:Espressif
-LIBS:FPGA_Actel
-LIBS:ftdi
-LIBS:gennum
-LIBS:Graphic
-LIBS:hc11
-LIBS:infineon
-LIBS:intersil
-LIBS:ir
-LIBS:Lattice
-LIBS:LED
-LIBS:LEM
-LIBS:Logic_74xgxx
-LIBS:Logic_74xx
-LIBS:Logic_CMOS_4000
-LIBS:Logic_CMOS_IEEE
-LIBS:logic_programmable
-LIBS:Logic_TTL_IEEE
-LIBS:maxim
-LIBS:MCU_Microchip_PIC10
-LIBS:MCU_Microchip_PIC12
-LIBS:MCU_Microchip_PIC16
-LIBS:MCU_Microchip_PIC18
-LIBS:MCU_Microchip_PIC24
-LIBS:MCU_Microchip_PIC32
-LIBS:MCU_NXP_Kinetis
-LIBS:MCU_NXP_LPC
-LIBS:MCU_NXP_S08
-LIBS:MCU_ST_STM8
-LIBS:MCU_Texas_MSP430
-LIBS:Mechanical
-LIBS:modules
-LIBS:Motor
-LIBS:motor_drivers
-LIBS:nordicsemi
-LIBS:nxp
-LIBS:onsemi
-LIBS:Oscillators
-LIBS:powerint
-LIBS:Power_Management
-LIBS:pspice
-LIBS:references
-LIBS:Relay
-LIBS:rfcom
-LIBS:RFSolutions
-LIBS:Sensor_Current
-LIBS:sensors
-LIBS:silabs
-LIBS:supertex
-LIBS:Switch
-LIBS:Transformer
-LIBS:Transistor
-LIBS:triac_thyristor
-LIBS:Valve
-LIBS:video
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:zetex
-LIBS:Zilog
-LIBS:Hedgehog-cache
+EESchema Schematic File Version 4
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -114,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Conn_01x02 J1
+L Connector_Generic:Conn_01x02 J1
 U 1 1 58F4EA55
 P 900 4125
 F 0 "J1" H 900 4250 50  0000 C CNN
@@ -125,7 +25,7 @@ F 3 "" H 900 4125 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 58F4EADC
 P 1300 4200
 F 0 "#PWR01" H 1300 3950 50  0001 C CNN
@@ -155,7 +55,7 @@ F3 "EN" I L 5000 3950 60
 F4 "VOUT" I R 6150 4150 60 
 $EndSheet
 $Comp
-L Conn_01x02 J2
+L Connector_Generic:Conn_01x02 J2
 U 1 1 58F4ED5F
 P 1350 3500
 F 0 "J2" V 1350 3625 50  0000 C CNN
@@ -166,7 +66,7 @@ F 3 "" H 1350 3500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 58F4EE3C
 P 1350 3750
 F 0 "#PWR02" H 1350 3500 50  0001 C CNN
@@ -200,7 +100,7 @@ F2 "VIN" I L 5000 5150 60
 F3 "VOUT" O R 6250 5150 60 
 $EndSheet
 $Comp
-L R R6
+L Device:R R6
 U 1 1 58F79435
 P 4250 5850
 F 0 "R6" H 4150 5875 50  0000 C CNN
@@ -211,7 +111,7 @@ F 3 "" H 4250 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R7
+L Device:R R7
 U 1 1 58F794B6
 P 4250 6200
 F 0 "R7" H 4125 6250 50  0000 C CNN
@@ -222,7 +122,7 @@ F 3 "" H 4250 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 58F7952A
 P 4250 6400
 F 0 "#PWR03" H 4250 6150 50  0001 C CNN
@@ -233,7 +133,7 @@ F 3 "" H 4250 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L Device:C C2
 U 1 1 58F7965B
 P 4475 6200
 F 0 "C2" H 4250 6250 50  0000 L CNN
@@ -248,7 +148,7 @@ POWER_IN_SENSE
 Text Label 6850 4550 0    60   ~ 0
 POWER_IN_SENSE
 $Comp
-L R R1
+L Device:R R1
 U 1 1 58F76263
 P 2175 3850
 F 0 "R1" H 2050 3900 50  0000 C CNN
@@ -259,7 +159,7 @@ F 3 "" H 2175 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 58F798F4
 P 3425 3725
 F 0 "#PWR04" H 3425 3475 50  0001 C CNN
@@ -270,7 +170,7 @@ F 3 "" H 3425 3725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L Device:R R3
 U 1 1 58F79A03
 P 3375 3325
 F 0 "R3" V 3300 3225 50  0000 C CNN
@@ -281,7 +181,7 @@ F 3 "" H 3375 3325 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R4
+L Device:R R4
 U 1 1 58F7D8BE
 P 2675 5000
 F 0 "R4" H 2550 5025 50  0000 C CNN
@@ -306,7 +206,7 @@ EN_Reg_MS
 Text Label 4475 3950 0    60   ~ 0
 EN_Reg_RPi
 $Comp
-L C C1
+L Device:C C1
 U 1 1 58F891B6
 P 3175 5400
 F 0 "C1" H 3275 5350 50  0000 L CNN
@@ -321,7 +221,7 @@ PWR_BUTTON_STATE
 Text Label 10875 3625 2    60   ~ 0
 EN_PWR_IN
 $Comp
-L D_Zener D3
+L Device:D_Zener D3
 U 1 1 58FA7A01
 P 2950 5400
 F 0 "D3" V 2900 5275 50  0000 C CNN
@@ -332,7 +232,7 @@ F 3 "" H 2950 5400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 58FA8CAB
 P 2675 5600
 F 0 "#PWR05" H 2675 5350 50  0001 C CNN
@@ -392,7 +292,7 @@ Wire Wire Line
 Wire Wire Line
 	7400 3050 6150 3050
 Wire Wire Line
-	4250 3050 4250 5700
+	4250 3050 4250 4025
 Wire Wire Line
 	7750 3750 7550 3750
 Wire Wire Line
@@ -403,27 +303,27 @@ Wire Wire Line
 	6475 4275 6475 5150
 Connection ~ 4250 4025
 Wire Wire Line
-	4250 6000 4250 6050
+	4250 6000 4250 6025
 Wire Wire Line
-	4250 6350 4250 6400
+	4250 6350 4250 6375
 Wire Wire Line
 	4250 6375 4475 6375
 Wire Wire Line
 	4475 6375 4475 6350
 Connection ~ 4250 6375
 Wire Wire Line
-	4250 6025 5325 6025
+	4250 6025 4475 6025
 Connection ~ 4250 6025
 Wire Wire Line
 	4475 6025 4475 6050
 Connection ~ 4475 6025
 Connection ~ 4250 5150
 Wire Wire Line
-	1100 4025 2400 4025
+	1100 4025 1450 4025
 Wire Wire Line
-	2800 4025 4250 4025
+	2800 4025 3050 4025
 $Comp
-L SW_DIP_x01 SW1
+L Switch:SW_DIP_x01 SW1
 U 1 1 5907518C
 P 2325 4625
 F 0 "SW1" H 2325 4775 50  0000 C CNN
@@ -442,12 +342,12 @@ Wire Wire Line
 Wire Wire Line
 	3050 4625 3050 4025
 Wire Wire Line
-	2625 4625 2725 4625
+	2625 4625 2675 4625
 Wire Wire Line
 	2675 4850 2675 4625
 Connection ~ 2675 4625
 $Comp
-L R R5
+L Device:R R5
 U 1 1 59078349
 P 2675 5400
 F 0 "R5" H 2550 5425 50  0000 C CNN
@@ -458,11 +358,11 @@ F 3 "" H 2675 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2675 5150 2675 5250
+	2675 5150 2675 5225
 Wire Wire Line
-	2675 5550 2675 5600
+	2675 5550 2675 5575
 Wire Wire Line
-	2675 5575 3175 5575
+	2675 5575 2950 5575
 Wire Wire Line
 	3175 5575 3175 5550
 Connection ~ 2675 5575
@@ -472,7 +372,7 @@ Connection ~ 2950 5575
 Wire Wire Line
 	2950 5250 2950 5225
 Wire Wire Line
-	2675 5225 4075 5225
+	2675 5225 2950 5225
 Connection ~ 2675 5225
 Wire Wire Line
 	3175 5225 3175 5250
@@ -499,7 +399,7 @@ Wire Wire Line
 Wire Wire Line
 	3525 3325 4025 3325
 $Comp
-L D_Zener D1
+L Device:D_Zener D1
 U 1 1 59084B89
 P 2375 3850
 F 0 "D1" V 2450 3750 50  0000 C CNN
@@ -535,7 +435,7 @@ Wire Wire Line
 	1450 3700 1450 4025
 Connection ~ 1450 4025
 $Comp
-L R R2
+L Device:R R2
 U 1 1 590B405C
 P 2800 3675
 F 0 "R2" V 2725 3575 50  0000 C CNN
@@ -548,9 +448,9 @@ $EndComp
 Wire Wire Line
 	2950 3675 2975 3675
 Wire Wire Line
-	2175 3675 2650 3675
+	2175 3675 2375 3675
 $Comp
-L Q_NPN_BEC Q2
+L Device:Q_NPN_BEC Q2
 U 1 1 5927935B
 P 3175 3575
 F 0 "Q2" V 3100 3400 50  0000 C CNN
@@ -569,7 +469,7 @@ PG_Reg_MS
 Wire Wire Line
 	10875 3750 10100 3750
 $Comp
-L D_Schottky D2
+L Device:D_Schottky D2
 U 1 1 59FB8832
 P 2875 4625
 F 0 "D2" H 2875 4525 50  0000 C CNN
@@ -580,7 +480,7 @@ F 3 "" H 2875 4625 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Q_PMOS_GDS Q1
+L Device:Q_PMOS_GDS Q1
 U 1 1 59FBCD02
 P 2600 3925
 F 0 "Q1" V 2850 3925 50  0000 C CNN
@@ -591,7 +491,7 @@ F 3 "" H 2600 3925 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L D_Zener D4
+L Device:D_Zener D4
 U 1 1 5A6E430F
 P 3450 4250
 F 0 "D4" V 3400 4125 50  0000 C CNN
@@ -602,7 +502,7 @@ F 3 "" H 3450 4250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR059
+L power:GND #PWR059
 U 1 1 5A6E4421
 P 3450 4450
 F 0 "#PWR059" H 3450 4200 50  0001 C CNN
@@ -617,4 +517,44 @@ Wire Wire Line
 Wire Wire Line
 	3450 4100 3450 4025
 Connection ~ 3450 4025
+Wire Wire Line
+	4250 4250 4250 5150
+Wire Wire Line
+	4250 4025 4250 4250
+Wire Wire Line
+	4250 6375 4250 6400
+Wire Wire Line
+	4250 6025 4250 6050
+Wire Wire Line
+	4475 6025 5325 6025
+Wire Wire Line
+	4250 5150 4250 5700
+Wire Wire Line
+	2675 4625 2725 4625
+Wire Wire Line
+	2675 5575 2675 5600
+Wire Wire Line
+	2950 5575 3175 5575
+Wire Wire Line
+	2675 5225 2675 5250
+Wire Wire Line
+	2950 5225 3175 5225
+Wire Wire Line
+	3175 5225 4075 5225
+Wire Wire Line
+	2000 4025 2175 4025
+Wire Wire Line
+	3050 4025 3450 4025
+Wire Wire Line
+	2175 4025 2375 4025
+Wire Wire Line
+	2600 3675 2650 3675
+Wire Wire Line
+	2375 4025 2400 4025
+Wire Wire Line
+	2375 3675 2600 3675
+Wire Wire Line
+	1450 4025 2000 4025
+Wire Wire Line
+	3450 4025 4250 4025
 $EndSCHEMATC

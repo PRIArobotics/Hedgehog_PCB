@@ -1,104 +1,4 @@
-EESchema Schematic File Version 3
-LIBS:power
-LIBS:device
-LIBS:linear
-LIBS:regul
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:hedgehog_symbols
-LIBS:ac-dc
-LIBS:Altera
-LIBS:analog_devices
-LIBS:Battery_Management
-LIBS:bbd
-LIBS:bosch
-LIBS:brooktre
-LIBS:Connector
-LIBS:dc-dc
-LIBS:Diode
-LIBS:Display
-LIBS:driver_gate
-LIBS:DSP_Microchip_DSPIC33
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:Espressif
-LIBS:FPGA_Actel
-LIBS:ftdi
-LIBS:gennum
-LIBS:Graphic
-LIBS:hc11
-LIBS:infineon
-LIBS:intersil
-LIBS:ir
-LIBS:Lattice
-LIBS:LED
-LIBS:LEM
-LIBS:Logic_74xgxx
-LIBS:Logic_74xx
-LIBS:Logic_CMOS_4000
-LIBS:Logic_CMOS_IEEE
-LIBS:logic_programmable
-LIBS:Logic_TTL_IEEE
-LIBS:maxim
-LIBS:MCU_Microchip_PIC10
-LIBS:MCU_Microchip_PIC12
-LIBS:MCU_Microchip_PIC16
-LIBS:MCU_Microchip_PIC18
-LIBS:MCU_Microchip_PIC24
-LIBS:MCU_Microchip_PIC32
-LIBS:MCU_NXP_Kinetis
-LIBS:MCU_NXP_LPC
-LIBS:MCU_NXP_S08
-LIBS:MCU_ST_STM8
-LIBS:MCU_Texas_MSP430
-LIBS:Mechanical
-LIBS:modules
-LIBS:Motor
-LIBS:motor_drivers
-LIBS:nordicsemi
-LIBS:nxp
-LIBS:onsemi
-LIBS:Oscillators
-LIBS:powerint
-LIBS:Power_Management
-LIBS:pspice
-LIBS:references
-LIBS:Relay
-LIBS:rfcom
-LIBS:RFSolutions
-LIBS:Sensor_Current
-LIBS:sensors
-LIBS:silabs
-LIBS:supertex
-LIBS:Switch
-LIBS:Transformer
-LIBS:Transistor
-LIBS:triac_thyristor
-LIBS:Valve
-LIBS:video
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:zetex
-LIBS:Zilog
-LIBS:Hedgehog-cache
+EESchema Schematic File Version 4
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -122,7 +22,7 @@ EN
 Text Notes 10550 6500 0    118  ~ 0
 Ref: 1x
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 5907589C
 P 5475 4350
 F 0 "#PWR06" H 5475 4100 50  0001 C CNN
@@ -133,7 +33,7 @@ F 3 "" H 5475 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C10
+L Device:C C10
 U 1 1 5907CE70
 P 4175 3725
 F 0 "C10" H 4425 3675 50  0000 R CNN
@@ -144,7 +44,7 @@ F 3 "" H 4175 3725 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C13
+L Device:C C13
 U 1 1 5907D42E
 P 7425 3825
 F 0 "C13" H 7310 3779 50  0000 R CNN
@@ -155,7 +55,7 @@ F 3 "" H 7425 3825 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R10
+L Device:R R10
 U 1 1 5907D4C2
 P 4825 4100
 F 0 "R10" H 4625 4150 50  0000 L CNN
@@ -166,7 +66,7 @@ F 3 "" H 4825 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C11
+L Device:C C11
 U 1 1 5907D610
 P 4525 3725
 F 0 "C11" H 4775 3675 50  0000 R CNN
@@ -177,7 +77,7 @@ F 3 "" H 4525 3725 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R11
+L Device:R R11
 U 1 1 5907D864
 P 7075 3550
 F 0 "R11" H 7145 3596 50  0000 L CNN
@@ -188,7 +88,7 @@ F 3 "" H 7075 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R12
+L Device:R R12
 U 1 1 5907D8F4
 P 7075 4075
 F 0 "R12" H 7145 4121 50  0000 L CNN
@@ -199,7 +99,7 @@ F 3 "" H 7075 4075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L L L10
+L Device:L L10
 U 1 1 5907D96F
 P 6775 3350
 F 0 "L10" V 6925 3350 50  0000 C CNN
@@ -210,7 +110,7 @@ F 3 "" H 6775 3350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Zener_ALT D10
+L Device:D_Zener_ALT D10
 U 1 1 59EF3CBA
 P 7825 3825
 F 0 "D10" V 7779 3904 50  0000 L CNN
@@ -222,7 +122,7 @@ F 4 "NZH5V1B,115" V 7825 3825 60  0001 C CNN "Manufacturer Code"
 	0    1    1    0   
 $EndComp
 $Comp
-L C C12
+L Device:C C12
 U 1 1 5907D2A6
 P 6175 3200
 F 0 "C12" V 6375 3200 50  0000 C CNN
@@ -276,7 +176,7 @@ Wire Wire Line
 	4175 3200 4175 3575
 Connection ~ 4925 3200
 $Comp
-L Q_NMOS_GDS Q10
+L Device:Q_NMOS_GDS Q10
 U 1 1 59F1426C
 P 6325 3750
 F 0 "Q10" H 6530 3796 50  0000 L CNN
@@ -341,7 +241,7 @@ Wire Wire Line
 Connection ~ 7425 4325
 Connection ~ 4175 3200
 $Comp
-L RT7259 U10
+L hedgehog_symbols:RT7259 U10
 U 1 1 59F17117
 P 5475 3600
 F 0 "U10" H 5475 4250 60  0000 C CNN
