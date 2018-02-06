@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Hedgehog-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -79,8 +80,8 @@ $EndComp
 $Sheet
 S 7750 3250 2350 1400
 U 58F4F058
-F0 "Logic_Hedgehog" 60
-F1 "Logic_Hedgehog.sch" 60
+F0 "Logic" 60
+F1 "Logic.sch" 60
 F2 "5V_RPi" I L 7750 3575 60 
 F3 "5V_MS" I L 7750 3425 60 
 F4 "3V3" I L 7750 3750 60 
