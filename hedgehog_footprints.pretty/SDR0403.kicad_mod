@@ -1,4 +1,4 @@
-(module SDR0403 (layer F.Cu) (tedit 5927193B)
+(module SDR0403 (layer F.Cu) (tedit 5BD1016B)
   (fp_text reference REF** (at 0 -3) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -17,9 +17,9 @@
   (fp_line (start -2.65 -2.35) (end 2.65 -2.35) (layer F.CrtYd) (width 0.05))
   (pad 1 smd rect (at -1.65 0) (size 1.8 4.5) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 1.65 0) (size 1.8 4.5) (layers F.Cu F.Paste F.Mask))
-  (model ${KISYS3DMOD}/Inductors_SMD.3dshapes/L_Taiyo_NRS50XX.wrl
+  (model ${KISYS3DMOD}/Inductor_SMD.3dshapes/L_Bourns_SRN6045TA.wrl
     (at (xyz 0 0 0))
-    (scale (xyz 3.4 3.6 2.9))
-    (rotate (xyz 0 0 90))
+    (scale (xyz 0.7 0.7 0.7))
+    (rotate (xyz 0 0 0))
   )
 )

@@ -1,4 +1,4 @@
-(module XAL60xx (layer F.Cu) (tedit 59271389)
+(module XAL60xx (layer F.Cu) (tedit 5BD0AE13)
   (fp_text reference REF** (at 0 -4.3) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -15,9 +15,9 @@
   (fp_line (start -3.5 3.6) (end 3.5 3.6) (layer F.CrtYd) (width 0.05))
   (pad 1 smd rect (at -2.02 0) (size 1.43 5.5) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 2.02 0) (size 1.43 5.5) (layers F.Cu F.Paste F.Mask))
-  (model ${KISYS3DMOD}/Inductors_SMD.3dshapes/L_self_cms_we-tpc_XL.wrl
+  (model ${KISYS3DMOD}/Inductor_SMD.3dshapes/L_Wuerth_MAPI-3020.wrl
     (at (xyz 0 0 0))
-    (scale (xyz 0.6 0.6 0.45))
+    (scale (xyz 2.1 2.1 1.4))
     (rotate (xyz 0 0 0))
   )
 )

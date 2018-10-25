@@ -1,9 +1,9 @@
 (module oshw (layer F.Cu) (tedit 0)
   (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
-    (effects (font (thickness 0.3)))
+    (effects (font (size 1.524 1.524) (thickness 0.3)))
   )
   (fp_text value LOGO (at 0.75 0) (layer F.SilkS) hide
-    (effects (font (thickness 0.3)))
+    (effects (font (size 1.524 1.524) (thickness 0.3)))
   )
   (fp_poly (pts (xy 0.088511 -2.666619) (xy 0.167475 -2.666022) (xy 0.238345 -2.665106) (xy 0.29894 -2.663915)
     (xy 0.347074 -2.662495) (xy 0.380564 -2.66089) (xy 0.397226 -2.659145) (xy 0.398483 -2.658708)

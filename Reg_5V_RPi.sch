@@ -1,20 +1,20 @@
 EESchema Schematic File Version 4
 LIBS:Hedgehog-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
-Title ""
+Title "Hedgehog"
 Date ""
-Rev ""
+Rev "0.4"
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4100 3325 0    60   Input ~ 0
+Text HLabel 3525 3325 0    60   Input ~ 0
 VIN
 Text HLabel 5025 3525 0    60   Input ~ 0
 EN
@@ -26,62 +26,62 @@ U 1 1 590645FD
 P 5675 3625
 F 0 "U20" H 5675 4075 60  0000 C CNN
 F 1 "TPS54340" H 5675 3175 60  0000 C CNN
-F 2 "hedgehog_footprints:HSOP-8" H 5325 2825 60  0001 C CNN
+F 2 "Package_SO:HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.1mm_ThermalVias" H 5325 2825 60  0001 C CNN
 F 3 "" H 5325 2825 60  0001 C CNN
 	1    5675 3625
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C20
+L Device:C_Small C22
 U 1 1 590647C4
 P 4250 3800
-F 0 "C20" H 4025 3825 50  0000 L CNN
-F 1 "10µ" H 4025 3750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4250 3800 50  0001 C CNN
+F 0 "C22" H 4100 3875 50  0000 L CNN
+F 1 "100n" H 4050 3750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4250 3800 50  0001 C CNN
 F 3 "" H 4250 3800 50  0001 C CNN
 	1    4250 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C21
+L Device:C_Small C23
 U 1 1 59064874
 P 4625 4075
-F 0 "C21" H 4400 4100 50  0000 L CNN
+F 0 "C23" H 4400 4100 50  0000 L CNN
 F 1 "2n4" H 4400 4025 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4625 4075 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4625 4075 50  0001 C CNN
 F 3 "" H 4625 4075 50  0001 C CNN
 	1    4625 4075
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C22
+L Device:C_Small C24
 U 1 1 590648E6
 P 4800 3925
-F 0 "C22" H 4892 3971 50  0000 L CNN
+F 0 "C24" H 4892 3971 50  0000 L CNN
 F 1 "22p" H 4892 3880 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4800 3925 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4800 3925 50  0001 C CNN
 F 3 "" H 4800 3925 50  0001 C CNN
 	1    4800 3925
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C23
+L Device:C_Small C25
 U 1 1 59064924
 P 6325 3325
-F 0 "C23" V 6125 3325 50  0000 C CNN
+F 0 "C25" V 6125 3325 50  0000 C CNN
 F 1 "100n" V 6200 3325 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603" H 6325 3325 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6325 3325 50  0001 C CNN
 F 3 "" H 6325 3325 50  0001 C CNN
 	1    6325 3325
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C24
+L Device:C_Small C26
 U 1 1 59064990
 P 7325 3825
-F 0 "C24" H 7417 3871 50  0000 L CNN
-F 1 "47µ" H 7417 3780 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 7325 3825 50  0001 C CNN
+F 0 "C26" H 7417 3871 50  0000 L CNN
+F 1 "100µ" H 7417 3780 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7325 3825 50  0001 C CNN
 F 3 "" H 7325 3825 50  0001 C CNN
 	1    7325 3825
 	1    0    0    -1  
@@ -92,7 +92,7 @@ U 1 1 59064A14
 P 4625 3850
 F 0 "R21" H 4425 3900 50  0000 L CNN
 F 1 "12k" H 4425 3825 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 4625 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4625 3850 50  0001 C CNN
 F 3 "" H 4625 3850 50  0001 C CNN
 	1    4625 3850
 	1    0    0    -1  
@@ -103,7 +103,7 @@ U 1 1 59064AB0
 P 5100 4075
 F 0 "R22" H 5159 4121 50  0000 L CNN
 F 1 "82k" H 5159 4030 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 5100 4075 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5100 4075 50  0001 C CNN
 F 3 "" H 5100 4075 50  0001 C CNN
 	1    5100 4075
 	1    0    0    -1  
@@ -113,8 +113,8 @@ L Device:R_Small R23
 U 1 1 59064B04
 P 6975 3675
 F 0 "R23" H 7034 3721 50  0000 L CNN
-F 1 "43k" H 7034 3630 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 6975 3675 50  0001 C CNN
+F 1 "180k" H 7034 3630 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6975 3675 50  0001 C CNN
 F 3 "" H 6975 3675 50  0001 C CNN
 	1    6975 3675
 	1    0    0    -1  
@@ -124,8 +124,8 @@ L Device:R_Small R24
 U 1 1 59064B72
 P 6975 3975
 F 0 "R24" H 7034 4021 50  0000 L CNN
-F 1 "8k2" H 7034 3930 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 6975 3975 50  0001 C CNN
+F 1 "34k" H 7034 3930 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6975 3975 50  0001 C CNN
 F 3 "" H 6975 3975 50  0001 C CNN
 	1    6975 3975
 	1    0    0    -1  
@@ -157,7 +157,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 3925 5100 3975
 Wire Wire Line
-	4625 3725 5175 3725
+	4625 3725 4800 3725
 Wire Wire Line
 	4625 3725 4625 3750
 Wire Wire Line
@@ -168,14 +168,14 @@ Connection ~ 4800 3725
 Wire Wire Line
 	5025 3525 5175 3525
 Wire Wire Line
-	4100 3325 5175 3325
+	3525 3325 3800 3325
 Wire Wire Line
 	4250 3325 4250 3700
 Connection ~ 4250 3325
 Wire Wire Line
 	6175 3325 6225 3325
 Wire Wire Line
-	6425 3325 6725 3325
+	6425 3325 6450 3325
 Wire Wire Line
 	6450 3325 6450 3475
 Wire Wire Line
@@ -185,7 +185,7 @@ Wire Wire Line
 Connection ~ 6450 3325
 Connection ~ 6575 3325
 Wire Wire Line
-	6925 3325 7400 3325
+	6925 3325 6975 3325
 Wire Wire Line
 	6975 3325 6975 3575
 Connection ~ 6975 3325
@@ -193,7 +193,7 @@ Wire Wire Line
 	7325 3325 7325 3725
 Connection ~ 7325 3325
 Wire Wire Line
-	6975 3775 6975 3875
+	6975 3775 6975 3825
 $Comp
 L power:GND #PWR07
 U 1 1 59066211
@@ -226,7 +226,7 @@ Wire Wire Line
 	6400 3825 6975 3825
 Connection ~ 6975 3825
 Wire Wire Line
-	4250 4250 7325 4250
+	4250 4250 4625 4250
 Wire Wire Line
 	4250 4250 4250 3900
 Wire Wire Line
@@ -249,11 +249,81 @@ Connection ~ 6975 4250
 Wire Wire Line
 	6175 3825 6250 3825
 Wire Wire Line
-	6250 3825 6250 4250
+	6250 3825 6250 3925
 Connection ~ 6250 4250
 Wire Wire Line
 	6175 3925 6250 3925
 Connection ~ 6250 3925
 Text Notes 10575 6525 0    118  ~ 0
 Ref: 2x
+Wire Wire Line
+	4800 3725 5175 3725
+Wire Wire Line
+	4250 3325 5175 3325
+Wire Wire Line
+	6450 3325 6575 3325
+Wire Wire Line
+	6575 3325 6725 3325
+Wire Wire Line
+	6975 3325 7325 3325
+Wire Wire Line
+	7325 3325 7400 3325
+Wire Wire Line
+	6975 3825 6975 3875
+Wire Wire Line
+	4625 4250 4800 4250
+Wire Wire Line
+	4800 4250 5100 4250
+Wire Wire Line
+	5100 4250 5675 4250
+Wire Wire Line
+	5675 4250 6250 4250
+Wire Wire Line
+	6975 4250 7325 4250
+Wire Wire Line
+	6250 4250 6975 4250
+Wire Wire Line
+	6250 3925 6250 4250
+$Comp
+L Device:C_Small C21
+U 1 1 5CECD2BB
+P 4000 3800
+F 0 "C21" H 3850 3875 50  0000 L CNN
+F 1 "10µ" H 3850 3750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4000 3800 50  0001 C CNN
+F 3 "" H 4000 3800 50  0001 C CNN
+	1    4000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 5CECD4E2
+P 3800 3800
+F 0 "C20" H 3650 3875 50  0000 L CNN
+F 1 "10µ" H 3650 3750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3800 3800 50  0001 C CNN
+F 3 "" H 3800 3800 50  0001 C CNN
+	1    3800 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3700 4000 3325
+Connection ~ 4000 3325
+Wire Wire Line
+	4000 3325 4250 3325
+Wire Wire Line
+	3800 3700 3800 3325
+Connection ~ 3800 3325
+Wire Wire Line
+	3800 3325 4000 3325
+Wire Wire Line
+	4000 3900 4000 4250
+Wire Wire Line
+	4000 4250 4250 4250
+Connection ~ 4250 4250
+Wire Wire Line
+	3800 3900 3800 4250
+Wire Wire Line
+	3800 4250 4000 4250
+Connection ~ 4000 4250
 $EndSCHEMATC

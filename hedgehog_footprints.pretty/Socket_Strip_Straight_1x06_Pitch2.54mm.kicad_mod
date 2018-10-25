@@ -1,4 +1,4 @@
-(module Socket_Strip_Straight_1x06_Pitch2.54mm (layer F.Cu) (tedit 59F21828)
+(module Socket_Strip_Straight_1x06_Pitch2.54mm (layer F.Cu) (tedit 5BD0A6DF)
   (descr "Through hole straight socket strip, 1x06, 2.54mm pitch, single row")
   (tags "Through hole socket strip THT 1x06 2.54mm single row")
   (fp_text reference J45 (at -0.55 14.75) (layer F.SilkS) hide
@@ -30,9 +30,9 @@
     (zone_connect 1))
   (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
     (zone_connect 1))
-  (model ${KISYS3DMOD}/Socket_Strips.3dshapes/Socket_Strip_Straight_1x06_Pitch2.54mm.wrl
-    (at (xyz 0 -0.25 0))
+  (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x06_P2.54mm_Vertical.wrl
+    (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 270))
+    (rotate (xyz 0 0 0))
   )
 )

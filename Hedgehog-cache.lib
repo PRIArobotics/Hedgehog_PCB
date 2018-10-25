@@ -1,11 +1,28 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic:Conn_01x02
+# Connector_Generic_Conn_01x01
 #
-DEF Connector_Generic:Conn_01x02 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x01 J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic:Conn_01x02" 0 -200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x01" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*
+$ENDFPLIST
+DRAW
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -50 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x02
+#
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -20,11 +37,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x04
+# Connector_Generic_Conn_01x04
 #
-DEF Connector_Generic:Conn_01x04 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Generic:Conn_01x04" 0 -300 50 H V C CNN
+F1 "Connector_Generic_Conn_01x04" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -43,11 +60,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x06
+# Connector_Generic_Conn_01x06
 #
-DEF Connector_Generic:Conn_01x06 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x06 J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "Connector_Generic:Conn_01x06" 0 -400 50 H V C CNN
+F1 "Connector_Generic_Conn_01x06" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -70,11 +87,11 @@ X Pin_6 6 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x08
+# Connector_Generic_Conn_01x08
 #
-DEF Connector_Generic:Conn_01x08 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x08 J 0 40 Y N 1 F N
 F0 "J" 0 400 50 H V C CNN
-F1 "Connector_Generic:Conn_01x08" 0 -500 50 H V C CNN
+F1 "Connector_Generic_Conn_01x08" 0 -500 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -101,11 +118,11 @@ X Pin_8 8 -200 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_02x06_Odd_Even
+# Connector_Generic_Conn_02x06_Odd_Even
 #
-DEF Connector_Generic:Conn_02x06_Odd_Even J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_02x06_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 300 50 H V C CNN
-F1 "Connector_Generic:Conn_02x06_Odd_Even" 50 -400 50 H V C CNN
+F1 "Connector_Generic_Conn_02x06_Odd_Even" 50 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -140,11 +157,11 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_02x08_Odd_Even
+# Connector_Generic_Conn_02x08_Odd_Even
 #
-DEF Connector_Generic:Conn_02x08_Odd_Even J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_02x08_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 400 50 H V C CNN
-F1 "Connector_Generic:Conn_02x08_Odd_Even" 50 -500 50 H V C CNN
+F1 "Connector_Generic_Conn_02x08_Odd_Even" 50 -500 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -187,11 +204,11 @@ X Pin_9 9 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C
+# Device_C
 #
-DEF Device:C C 0 10 N Y 1 F N
+DEF Device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:C" 25 -100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -205,11 +222,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C_Small
+# Device_C_Small
 #
-DEF Device:C_Small C 0 10 N N 1 F N
+DEF Device_C_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "Device:C_Small" 10 -80 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -223,11 +240,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Crystal
+# Device_Crystal
 #
-DEF Device:Crystal Y 0 40 N N 1 F N
+DEF Device_Crystal Y 0 40 N N 1 F N
 F0 "Y" 0 150 50 H V C CNN
-F1 "Device:Crystal" 0 -150 50 H V C CNN
+F1 "Device_Crystal" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -244,16 +261,15 @@ X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:D_Schottky
+# Device_D_Schottky
 #
-DEF Device:D_Schottky D 0 40 N N 1 F N
+DEF Device_D_Schottky D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:D_Schottky" 0 -100 50 H V C CNN
+F1 "Device_D_Schottky" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  TO-???*
- *SingleDiode
  *_Diode_*
  *SingleDiode*
  D_*
@@ -267,16 +283,15 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:D_Schottky_Small_ALT
+# Device_D_Schottky_Small_ALT
 #
-DEF Device:D_Schottky_Small_ALT D 0 10 N N 1 F N
+DEF Device_D_Schottky_Small_ALT D 0 10 N N 1 F N
 F0 "D" -50 80 50 H V L CNN
-F1 "Device:D_Schottky_Small_ALT" -280 -80 50 H V L CNN
+F1 "Device_D_Schottky_Small_ALT" -280 -80 50 H V L CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
  TO-???*
- *SingleDiode
  *_Diode_*
  *SingleDiode*
  D_*
@@ -292,16 +307,15 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:D_Zener
+# Device_D_Zener
 #
-DEF Device:D_Zener D 0 40 N N 1 F N
+DEF Device_D_Zener D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:D_Zener" 0 -100 50 H V C CNN
+F1 "Device_D_Zener" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  TO-???*
- *SingleDiode
  *_Diode_*
  *SingleDiode*
  D_*
@@ -315,16 +329,15 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:D_Zener_ALT
+# Device_D_Zener_ALT
 #
-DEF Device:D_Zener_ALT D 0 40 N N 1 F N
+DEF Device_D_Zener_ALT D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:D_Zener_ALT" 0 -100 50 H V C CNN
+F1 "Device_D_Zener_ALT" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  TO-???*
- *SingleDiode
  *_Diode_*
  *SingleDiode*
  D_*
@@ -338,27 +351,32 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Jumper
+# Device_Ferrite_Bead_Small
 #
-DEF Device:Jumper JP 0 30 Y N 1 F N
-F0 "JP" 0 150 50 H V C CNN
-F1 "Device:Jumper" 0 -80 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
+DEF Device_Ferrite_Bead_Small FB 0 0 N Y 1 F N
+F0 "FB" 75 50 50 H V L CNN
+F1 "Device_Ferrite_Bead_Small" 75 -50 50 H V L CNN
+F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Inductor_*
+ L_*
+ *Ferrite*
+$ENDFPLIST
 DRAW
-A 0 -26 125 1426 373 0 1 0 N -98 50 99 50
-C -100 0 35 0 1 0 N
-C 100 0 35 0 1 0 N
-X 1 1 -300 0 165 R 50 50 0 1 P
-X 2 2 300 0 165 L 50 50 0 1 P
+P 2 0 1 0 0 -50 0 -31 N
+P 2 0 1 0 0 35 0 51 N
+P 5 0 1 0 -72 11 -44 59 72 -8 44 -56 -72 11 N
+X ~ 1 0 100 50 D 50 50 1 1 P
+X ~ 2 0 -100 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:L
+# Device_L
 #
-DEF Device:L L 0 40 N N 1 F N
+DEF Device_L L 0 40 N N 1 F N
 F0 "L" -50 0 50 V V C CNN
-F1 "Device:L" 75 0 50 V V C CNN
+F1 "Device_L" 75 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -377,11 +395,11 @@ X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:LED
+# Device_LED
 #
-DEF Device:LED D 0 40 Y N 1 F N
+DEF Device_LED D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:LED" 0 -100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -400,11 +418,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:L_Small
+# Device_L_Small
 #
-DEF Device:L_Small L 0 10 N N 1 F N
+DEF Device_L_Small L 0 10 N N 1 F N
 F0 "L" 30 40 50 H V L CNN
-F1 "Device:L_Small" 30 -40 50 H V L CNN
+F1 "Device_L_Small" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -423,11 +441,11 @@ X ~ 2 0 -100 20 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Q_NMOS_GDS
+# Device_Q_NMOS_GDS
 #
-DEF Device:Q_NMOS_GDS Q 0 0 Y N 1 F N
+DEF Device_Q_NMOS_GDS Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Device:Q_NMOS_GDS" 200 -50 50 H V L CNN
+F1 "Device_Q_NMOS_GDS" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -455,11 +473,11 @@ X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Q_NPN_BEC
+# Device_Q_NPN_BEC
 #
-DEF Device:Q_NPN_BEC Q 0 0 Y N 1 F N
+DEF Device_Q_NPN_BEC Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Device:Q_NPN_BEC" 200 -50 50 H V L CNN
+F1 "Device_Q_NPN_BEC" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -474,11 +492,11 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Q_PMOS_GDS
+# Device_Q_PMOS_GDS
 #
-DEF Device:Q_PMOS_GDS Q 0 0 Y N 1 F N
+DEF Device_Q_PMOS_GDS Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Device:Q_PMOS_GDS" 200 -50 50 H V L CNN
+F1 "Device_Q_PMOS_GDS" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -506,15 +524,14 @@ X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_R
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- R_*
  R_*
 $ENDFPLIST
 DRAW
@@ -524,11 +541,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R_Small
+# Device_R_Small
 #
-DEF Device:R_Small R 0 10 N N 1 F N
+DEF Device_R_Small R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "Device:R_Small" 30 -40 50 H V L CNN
+F1 "Device_R_Small" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -541,11 +558,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Switch:SW_DIP_x01
+# Switch_SW_DIP_x01
 #
-DEF Switch:SW_DIP_x01 SW 0 0 Y N 1 F N
+DEF Switch_SW_DIP_x01 SW 0 0 Y N 1 F N
 F0 "SW" 0 150 50 H V C CNN
-F1 "Switch:SW_DIP_x01" 0 -150 50 H V C CNN
+F1 "Switch_SW_DIP_x01" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -561,11 +578,11 @@ X ~ 2 300 0 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# hedgehog_symbols:74LVC2G32
+# hedgehog_symbols_74LVC2G32
 #
-DEF hedgehog_symbols:74LVC2G32 U 0 40 Y Y 1 F N
+DEF hedgehog_symbols_74LVC2G32 U 0 40 Y Y 1 F N
 F0 "U" 0 550 60 H V C CNN
-F1 "hedgehog_symbols:74LVC2G32" 0 -200 60 H V C CNN
+F1 "hedgehog_symbols_74LVC2G32" 0 -200 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -581,11 +598,11 @@ X VCC 8 450 400 200 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# hedgehog_symbols:DRV8835
+# hedgehog_symbols_DRV8835
 #
-DEF hedgehog_symbols:DRV8835 U 0 40 Y Y 1 F N
+DEF hedgehog_symbols_DRV8835 U 0 40 Y Y 1 F N
 F0 "U" 0 500 60 H V C CNN
-F1 "hedgehog_symbols:DRV8835" 0 -500 60 H V C CNN
+F1 "hedgehog_symbols_DRV8835" 0 -500 60 H V C CNN
 F2 "hedgehog_footprints:WSON12" 0 -600 60 H I C CNN
 F3 "" 50 0 60 H I C CNN
 $FPLIST
@@ -608,11 +625,11 @@ X AIN2/AENBL 9 -550 250 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# hedgehog_symbols:IMU_ICM-20689
+# hedgehog_symbols_IMU_ICM-20689
 #
-DEF hedgehog_symbols:IMU_ICM-20689 U 0 40 Y Y 1 F N
+DEF hedgehog_symbols_IMU_ICM-20689 U 0 40 Y Y 1 F N
 F0 "U" -900 400 60 H V C CNN
-F1 "hedgehog_symbols:IMU_ICM-20689" -600 500 60 H V C CNN
+F1 "hedgehog_symbols_IMU_ICM-20689" -600 500 60 H V C CNN
 F2 "" 150 -500 60 H I C CNN
 F3 "" 150 -500 60 H I C CNN
 DRAW
@@ -645,21 +662,22 @@ X AD0/SD0 9 750 150 200 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# hedgehog_symbols:LM25011
+# hedgehog_symbols_LM25011
 #
-DEF hedgehog_symbols:LM25011 U 0 40 Y Y 1 F N
+DEF hedgehog_symbols_LM25011 U 0 40 Y Y 1 F N
 F0 "U" 0 650 60 H V C CNN
-F1 "hedgehog_symbols:LM25011" 0 -550 60 H V C CNN
+F1 "hedgehog_symbols_LM25011" 0 -550 60 H V C CNN
 F2 "" -150 800 60 H I C CNN
 F3 "" -150 800 60 H I C CNN
 DRAW
 S -250 600 250 -500 0 1 0 f
 X VIN 1 -450 500 200 R 50 50 1 1 W
 X BST 10 450 500 200 L 50 50 1 1 B
+X TP 11 -450 -400 200 R 50 50 1 1 W
 X RT 2 -450 250 200 R 50 50 1 1 I
 X PGD 3 -450 50 200 R 50 50 1 1 C
 X SS 4 -450 -150 200 R 50 50 1 1 B
-X SGND 5 -450 -400 200 R 50 50 1 1 W
+X SGND 5 -450 -300 200 R 50 50 1 1 W
 X FB 6 450 -400 200 L 50 50 1 1 I
 X CSG 7 450 -250 200 L 50 50 1 1 W
 X CS 8 450 0 200 L 50 50 1 1 I
@@ -667,11 +685,11 @@ X SW 9 450 250 200 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# hedgehog_symbols:MC74VHC1G126
+# hedgehog_symbols_MC74VHC1G126
 #
-DEF hedgehog_symbols:MC74VHC1G126 U 0 40 Y Y 1 F N
+DEF hedgehog_symbols_MC74VHC1G126 U 0 40 Y Y 1 F N
 F0 "U" 0 300 60 H V C CNN
-F1 "hedgehog_symbols:MC74VHC1G126" 0 -300 60 H V C CNN
+F1 "hedgehog_symbols_MC74VHC1G126" 0 -300 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -688,11 +706,11 @@ X VCC 5 450 150 200 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# hedgehog_symbols:Piezo-Buzzer
+# hedgehog_symbols_Piezo-Buzzer
 #
-DEF hedgehog_symbols:Piezo-Buzzer U 0 40 Y Y 1 F N
+DEF hedgehog_symbols_Piezo-Buzzer U 0 40 Y Y 1 F N
 F0 "U" 200 100 60 H V C CNN
-F1 "hedgehog_symbols:Piezo-Buzzer" 450 0 60 H V C CNN
+F1 "hedgehog_symbols_Piezo-Buzzer" 450 0 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -702,11 +720,11 @@ X ~ 2 -50 -150 98 U 20 20 1 1 W
 ENDDRAW
 ENDDEF
 #
-# hedgehog_symbols:RT7259
+# hedgehog_symbols_RT7259
 #
-DEF hedgehog_symbols:RT7259 U 0 40 Y Y 1 F N
+DEF hedgehog_symbols_RT7259 U 0 40 Y Y 1 F N
 F0 "U" 0 650 60 H V C CNN
-F1 "hedgehog_symbols:RT7259" 0 550 60 H V C CNN
+F1 "hedgehog_symbols_RT7259" 0 550 60 H V C CNN
 F2 "hedgehog_footprints:DFN14_4x3" -150 150 60 H I C CNN
 F3 "" -150 150 60 H I C CNN
 DRAW
@@ -729,11 +747,11 @@ X SW 9 500 150 200 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# hedgehog_symbols:RaspberryPI3
+# hedgehog_symbols_RaspberryPI3
 #
-DEF hedgehog_symbols:RaspberryPI3 U 0 40 Y Y 1 F N
+DEF hedgehog_symbols_RaspberryPI3 U 0 40 Y Y 1 F N
 F0 "U" -400 -1150 60 H V C CNN
-F1 "hedgehog_symbols:RaspberryPI3" -150 1050 60 H V C CNN
+F1 "hedgehog_symbols_RaspberryPI3" -150 1050 60 H V C CNN
 F2 "" 0 -1025 60 H I C CNN
 F3 "" 0 -1025 60 H I C CNN
 DRAW
@@ -821,11 +839,11 @@ X GND 9 -650 500 200 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# hedgehog_symbols:STM32F401VBT6
+# hedgehog_symbols_STM32F401VBT6
 #
-DEF hedgehog_symbols:STM32F401VBT6 U 0 40 Y Y 1 F N
+DEF hedgehog_symbols_STM32F401VBT6 U 0 40 Y Y 1 F N
 F0 "U" 0 550 60 H V C CNN
-F1 "hedgehog_symbols:STM32F401VBT6" 0 700 60 H V C CNN
+F1 "hedgehog_symbols_STM32F401VBT6" 0 700 60 H V C CNN
 F2 "" -250 -200 60 H I C CNN
 F3 "" -250 -200 60 H I C CNN
 DRAW
@@ -933,11 +951,11 @@ X GND 99 950 1900 200 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# hedgehog_symbols:TPS54340
+# hedgehog_symbols_TPS54340
 #
-DEF hedgehog_symbols:TPS54340 U 0 40 Y Y 1 F N
+DEF hedgehog_symbols_TPS54340 U 0 40 Y Y 1 F N
 F0 "U" 0 450 60 H V C CNN
-F1 "hedgehog_symbols:TPS54340" 0 -450 60 H V C CNN
+F1 "hedgehog_symbols_TPS54340" 0 -450 60 H V C CNN
 F2 "" -350 -800 60 H I C CNN
 F3 "" -350 -800 60 H I C CNN
 DRAW
@@ -954,11 +972,11 @@ X PWRPD 9 500 -200 200 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# power:+3V3
+# power_+3V3
 #
-DEF power:+3V3 #PWR 0 0 Y Y 1 F P
+DEF power_+3V3 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3V3" 0 140 50 H V C CNN
+F1 "power_+3V3" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -970,11 +988,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+5V
+# power_+5V
 #
-DEF power:+5V #PWR 0 0 Y Y 1 F P
+DEF power_+5V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+5V" 0 140 50 H V C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -985,11 +1003,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -998,11 +1016,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:VDDA
+# power_VDDA
 #
-DEF power:VDDA #PWR 0 0 Y Y 1 F P
+DEF power_VDDA #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:VDDA" 0 150 50 H V C CNN
+F1 "power_VDDA" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
