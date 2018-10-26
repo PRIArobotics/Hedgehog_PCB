@@ -413,7 +413,7 @@ max. 3A
 Text Notes 5025 4375 0    60   ~ 0
 6-42V
 Text Notes 5025 5275 0    60   ~ 0
-6-42V
+6-40V
 Text Notes 5850 5275 0    60   ~ 0
 max. 1A
 Text Notes 5025 3175 0    60   ~ 0
