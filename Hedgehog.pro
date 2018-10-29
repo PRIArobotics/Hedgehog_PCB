@@ -1,4 +1,4 @@
-update=Mit 24 Okt 2018 20:13:35 CEST
+update=Mon 29 Okt 2018 22:36:56 CET
 version=1
 last_client=kicad
 [cvpcb]
@@ -9,16 +9,6 @@ version=1
 [eeschema]
 version=1
 LibDir=
-[schematic_editor]
-version=1
-PageLayoutDescrFile=pageLayout.kicad_wks
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=60
-ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=pageLayout.kicad_wks
@@ -81,3 +71,13 @@ Type=2
 [pcbnew/Layer.B.Cu]
 Name=B.Cu
 Type=2
+[schematic_editor]
+version=1
+PageLayoutDescrFile=pageLayout.kicad_wks
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
