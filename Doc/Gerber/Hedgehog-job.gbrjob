@@ -5,17 +5,17 @@
     {
       "Vendor":      "KiCad",
       "Application": "Pcbnew",
-      "Version":     "6.0.0-rc1-unknown-ce496ff~66~ubuntu16.04.1"
+      "Version":     "5.1.2-f72e74a~84~ubuntu16.04.1"
     },
-    "CreationDate":  "2018-10-29T22:38:19+01:00"
+    "CreationDate":  "2019-05-13T00:21:41+02:00"
   },
   "GeneralSpecs":
   {
     "ProjectId":
     {
       "Name": "Hedgehog",
-      "GUID": "4865646765686F672E6B696361645F70",
-      "Revision": "0.4"
+      "GUID": "48656467-6568-46f6-972e-6b696361645f",
+      "Revision": "1.0"
     },
     "Size":
     {
@@ -49,52 +49,52 @@
   "FilesAttributes":
   [
     {
-      "Path":  "Hedgehog-F.Cu.gtl",
+      "Path":  "Hedgehog-F_Cu.gtl",
       "FileFunction":  "Copper,L1,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "Hedgehog-In1.Cu.g2",
+      "Path":  "Hedgehog-In1_Cu.g2",
       "FileFunction":  "Copper,L2,Inr",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "Hedgehog-In2.Cu.g3",
+      "Path":  "Hedgehog-In2_Cu.g3",
       "FileFunction":  "Copper,L3,Inr",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "Hedgehog-B.Cu.gbl",
+      "Path":  "Hedgehog-B_Cu.gbl",
       "FileFunction":  "Copper,L4,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "Hedgehog-F.Paste.gtp",
+      "Path":  "Hedgehog-F_Paste.gtp",
       "FileFunction":  "SolderPaste,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "Hedgehog-F.SilkS.gto",
+      "Path":  "Hedgehog-F_SilkS.gto",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "Hedgehog-B.SilkS.gbo",
+      "Path":  "Hedgehog-B_SilkS.gbo",
       "FileFunction":  "Legend,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "Hedgehog-F.Mask.gts",
+      "Path":  "Hedgehog-F_Mask.gts",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "Hedgehog-B.Mask.gbs",
+      "Path":  "Hedgehog-B_Mask.gbs",
       "FileFunction":  "SolderMask,Bot",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "Hedgehog-Edge.Cuts.gm1",
+      "Path":  "Hedgehog-Edge_Cuts.gm1",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
     }

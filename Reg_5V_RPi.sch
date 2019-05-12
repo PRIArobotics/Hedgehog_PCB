@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
 Title "Hedgehog"
-Date ""
-Rev "0.4"
+Date "2019-05-12"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -67,13 +67,13 @@ $EndComp
 $Comp
 L Device:C_Small C25
 U 1 1 59064924
-P 6325 3325
-F 0 "C25" V 6125 3325 50  0000 C CNN
-F 1 "100n" V 6200 3325 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6325 3325 50  0001 C CNN
-F 3 "" H 6325 3325 50  0001 C CNN
-	1    6325 3325
-	0    1    1    0   
+P 6450 3175
+F 0 "C25" H 6300 3125 50  0000 C CNN
+F 1 "100n" H 6275 3200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6450 3175 50  0001 C CNN
+F 3 "" H 6450 3175 50  0001 C CNN
+	1    6450 3175
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C_Small C26
@@ -175,14 +175,11 @@ Connection ~ 3950 3325
 Wire Wire Line
 	6175 3325 6225 3325
 Wire Wire Line
-	6425 3325 6450 3325
-Wire Wire Line
 	6450 3325 6450 3475
 Wire Wire Line
 	6450 3475 6175 3475
 Wire Wire Line
 	6575 3325 6575 3350
-Connection ~ 6450 3325
 Connection ~ 6575 3325
 Wire Wire Line
 	6925 3325 6975 3325
@@ -347,4 +344,26 @@ Wire Wire Line
 Connection ~ 4350 3525
 Wire Wire Line
 	4350 3525 5175 3525
+$Comp
+L Device:R_Small R26
+U 1 1 5BF09FBC
+P 6225 3175
+F 0 "R26" H 6025 3225 50  0000 L CNN
+F 1 "8R2" H 6025 3150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6225 3175 50  0001 C CNN
+F 3 "" H 6225 3175 50  0001 C CNN
+	1    6225 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3275 6450 3325
+Connection ~ 6450 3325
+Wire Wire Line
+	6225 3275 6225 3325
+Wire Wire Line
+	6225 3075 6225 3050
+Wire Wire Line
+	6225 3050 6450 3050
+Wire Wire Line
+	6450 3050 6450 3075
 $EndSCHEMATC

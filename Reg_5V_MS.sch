@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
 Title "Hedgehog"
-Date ""
-Rev "0.4"
+Date "2019-05-12"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -248,7 +248,7 @@ Wire Wire Line
 Wire Wire Line
 	5425 4325 5475 4325
 Wire Wire Line
-	4825 4325 5425 4325
+	4825 4325 4975 4325
 Wire Wire Line
 	4525 4325 4825 4325
 Wire Wire Line
@@ -355,4 +355,9 @@ Wire Wire Line
 Connection ~ 3500 3200
 Wire Wire Line
 	3500 3200 3725 3200
+Wire Wire Line
+	4975 4000 4975 4325
+Connection ~ 4975 4325
+Wire Wire Line
+	4975 4325 5425 4325
 $EndSCHEMATC
